@@ -2,17 +2,16 @@
 
 //check every single number on both arr 1 and 2
 // check and see if each individual letter is equal to true
-
 const eqArrays = (arr1, arr2) => {
+  if ((Array.isArray(arr1) && Array.isArray(arr2)) && (arr1.length !== arr2.length)) {
+    return false;
+  }
   for (let i = 0; i < arr1.length; i++) {
-    for (let j = 0; j < arr2.length; j++) {
-      if (arr1[i] === arr2[j]) {
-        return true;
-      } else {
-        return false;
-      }
+    if (arr1[i] !== arr2[i]) {
+      return false;
     }
   }
+  return true;
 };
 
 const assertEqual = function(actual, expected) {
