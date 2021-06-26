@@ -1,3 +1,5 @@
+//eqFunction
+
 const eqArrays = (arr1, arr2) => {
   if ((Array.isArray(arr1) && Array.isArray(arr2)) && (arr1.length !== arr2.length)) {
     return false;
@@ -10,12 +12,13 @@ const eqArrays = (arr1, arr2) => {
   return true;
 };
 
+//flatten function
 
 const flatten = (array) => {
   let finalArray = [];
-  for (var i = 0; i < array.length; i++) {
-    if(Array.isArray(array[i])) {
-      for (var j = 0; j < array[i].length; j++) {
+  for (let i = 0; i < array.length; i++) {
+    if (Array.isArray(array[i])) {;
+      for (let j = 0; j < array[i].length; j++) {
         finalArray.push(array[i][j]);
       }
     } else {
@@ -25,10 +28,7 @@ const flatten = (array) => {
   return finalArray;
 };
 
-
-
-// assertArrayEquals((flatten([1,2,[3,4],5,[6]]), [1,2,3,4,5,6])); //[ 1, 2, 3, 5, 6 ]);
-
+//assertArrayEquals function
 
 const assertArrayEquals = (array1, array2) => {
 
@@ -44,5 +44,4 @@ const assertArrayEquals = (array1, array2) => {
 
 };
 
-assertArrayEquals(flatten([1,2,[3,4],5,[6]], [1,2,3,4,5,6]));
-// eqArrays((flatten([1,2,3,4,5,6]), [1,2,3,4,5,6]), [ 1, 2, 3, 5, 6 ]);
+assertArrayEquals(flatten([1,2,[3,4],5,[6]]), [1,2,3,4,5,6]);
