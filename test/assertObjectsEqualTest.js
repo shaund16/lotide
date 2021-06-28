@@ -1,4 +1,3 @@
-/**/ 
 const eqObjects = require('../eqObjects');
 const assertObjectsEqual = require('../assertObjectsEqual');
 
