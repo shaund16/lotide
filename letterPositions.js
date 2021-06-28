@@ -15,7 +15,7 @@ const eqArrays = (arr1, arr2) => {
 
 //ASSERT ARRAY EQUALS FUNCTION
 
-const assertArrayEquals = (array1, array2) => {
+const assertArraysEqual = (array1, array2) => {
   if (eqArrays(array1, array2)) {
     console.log('They are equal');
   } else {
@@ -63,4 +63,4 @@ const letterPositions = function(sentence) {
 // console.log(letterPositions('lighthouse in the house'))
 console.log(letterPositions('hello'));
 // assertArrayEquals(letterPositions('hello').e, [1])
-assertArrayEquals(letterPositions('lighthouse in the house'));
+assertArraysEqual(letterPositions('lighthouse in the house'));

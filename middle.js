@@ -13,7 +13,7 @@ const eqArrays = (arr1, arr2) => {
 };
 
 
-const assertArrayEquals = (array1, array2) => {
+const assertArraysEqual = (array1, array2) => {
  
   if (eqArrays(array1, array2)) {
 
@@ -45,12 +45,12 @@ const middle = (middle) => {
   return finalArray;
 };
 
-assertArrayEquals(middle([1]), []); // => []
-assertArrayEquals(middle([1, 2]), []); // => []
+assertArraysEqual(middle([1]), []); // => []
+assertArraysEqual(middle([1, 2]), []); // => []
 
-assertArrayEquals(middle([1, 2, 3]), [2]); // => [2]
-assertArrayEquals(middle([1, 2, 3, 4, 5]), [3]); // => [3]
+assertArraysEqual(middle([1, 2, 3]), [2]); // => [2]
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
 
-assertArrayEquals(middle([1, 2, 3, 4]), [2,3]); // => [2, 3]
-assertArrayEquals(middle([1, 2, 3, 4, 5, 6]), [3,4]); // => [3, 4]
+assertArraysEqual(middle([1, 2, 3, 4]), [2,3]); // => [2, 3]
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3,4]); // => [3, 4]
 

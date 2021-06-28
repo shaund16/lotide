@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual');
+
 const head = (arr1) => {
   return arr1[0];
 };

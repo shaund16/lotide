@@ -17,7 +17,7 @@ const eqArrays = (arr1, arr2) => {
 const flatten = (array) => {
   let finalArray = [];
   for (let i = 0; i < array.length; i++) {
-    if (Array.isArray(array[i])) {;
+    if (Array.isArray(array[i])) {
       for (let j = 0; j < array[i].length; j++) {
         finalArray.push(array[i][j]);
       }
@@ -30,7 +30,7 @@ const flatten = (array) => {
 
 //assertArrayEquals function
 
-const assertArrayEquals = (array1, array2) => {
+const assertArraysEqual = (array1, array2) => {
 
   //using and calling the eqArray function testing that both arrays are equal will return a new result
   if (eqArrays(array1, array2)) {
@@ -44,4 +44,4 @@ const assertArrayEquals = (array1, array2) => {
 
 };
 
-assertArrayEquals(flatten([1,2,[3,4],5,[6]]), [1,2,3,4,5,6]);
+assertArraysEqual(flatten([1,2,[3,4],5,[6]]), [1,2,3,4,5,6]);

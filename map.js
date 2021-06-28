@@ -39,7 +39,7 @@ const map = function(arr, callback) {
 
 ///////////ASSET ARRAY EQUALS FUNCTION ////////////////
 
-const assertArrayEquals = (array1, array2) => {
+const assertArraysEqual = (array1, array2) => {
 
   if (eqArrays(array1, array2)) {
   
@@ -54,7 +54,7 @@ const assertArrayEquals = (array1, array2) => {
 
 
 
-assertArrayEquals([ 'g', 'c', 't', 'm', 't' ], map(words, word => word[0]));
-assertArrayEquals([ 'r', 'o', 'o', 'a', 'o' ], map(words, word => word[1]));
-assertArrayEquals([2, 4, 6, 8, 10, 12], map(numbers, number => number * 2));
-assertArrayEquals([72, 82, 102], map(testScores, score => score + 2));
+assertArraysEqual([ 'g', 'c', 't', 'm', 't' ], map(words, word => word[0]));
+assertArraysEqual([ 'r', 'o', 'o', 'a', 'o' ], map(words, word => word[1]));
+assertArraysEqual([2, 4, 6, 8, 10, 12], map(numbers, number => number * 2));
+assertArraysEqual([72, 82, 102], map(testScores, score => score + 2));
