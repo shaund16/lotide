@@ -1,32 +1,3 @@
-// TEST/ASSERTION FUNCTIONS
-
-const eqArrays = (arr1, arr2) => {
-  if ((Array.isArray(arr1) && Array.isArray(arr2)) && (arr1.length !== arr2.length)) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-
-const assertArraysEqual = (array1, array2) => {
- 
-  if (eqArrays(array1, array2)) {
-
-    console.log('They are equal');
-  } else {
-    console.log('They are not equal');
-  }
-
-};
-
-
-
-
 //MIDDLE FUNCTION
 
 //find the length of array and divide it by 2
@@ -45,12 +16,6 @@ const middle = (middle) => {
   return finalArray;
 };
 
-assertArraysEqual(middle([1]), []); // => []
-assertArraysEqual(middle([1, 2]), []); // => []
+module.exports = middle;
 
-assertArraysEqual(middle([1, 2, 3]), [2]); // => [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
-
-assertArraysEqual(middle([1, 2, 3, 4]), [2,3]); // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3,4]); // => [3, 4]
 
