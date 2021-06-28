@@ -1,3 +1,4 @@
+const eqObjects = require('./eqObjects');
 // const eqObjects = function(object1, object2) {
 //   //make a variable for object 1 and object to store the keys in the object (eg. a: b:)
 
